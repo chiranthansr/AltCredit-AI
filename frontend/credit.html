@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4. Credit Info</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container" style="max-width: 700px;">
+        <h2>Credit Information</h2>
+        <form onsubmit="handleCreditInfo(event)">
+            <div class="grid-2">
+                <div class="form-group">
+                    <label>Age</label>
+                    <input type="number" name="age" required>
+                </div>
+                <div class="form-group">
+                    <label>Monthly Income (₹)</label>
+                    <input type="number" name="monthly_income" required>
+                </div>
+                <div class="form-group">
+                    <label>Monthly Debt Payment (₹)</label>
+                    <input type="number" name="monthly_debt_payment" required>
+                </div>
+                <div class="form-group">
+                    <label>Credit Utilization (%)</label>
+                    <input type="number" name="credit_utilization" required>
+                </div>
+                <div class="form-group">
+                    <label>Open Credit Lines</label>
+                    <input type="number" name="open_credit_lines" required>
+                </div>
+                <div class="form-group">
+                    <label>Real Estate Loans</label>
+                    <input type="number" name="real_estate_loans" required>
+                </div>
+                <div class="form-group">
+                    <label>30-59 Day Late Payments</label>
+                    <input type="number" name="late_30_59" required>
+                </div>
+                <div class="form-group">
+                    <label>60-89 Day Late Payments</label>
+                    <input type="number" name="late_60_89" required>
+                </div>
+                <div class="form-group">
+                    <label>90+ Day Late Payments</label>
+                    <input type="number" name="late_90_plus" required>
+                </div>
+                <div class="form-group">
+                    <label>Dependents</label>
+                    <input type="number" name="dependents" required>
+                </div>
+            </div>
+            <button type="submit">Save Data</button>
+        </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

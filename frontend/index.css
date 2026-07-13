@@ -1,0 +1,104 @@
+:root {
+    --bg-light-pink: #FCE4EC; /* Light pink background */
+    --accent-dark-pink: #D81B60; /* Dark pink buttons and headers */
+    --text-dark: #333333;
+    --card-white: #FFFFFF;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-light-pink);
+    color: var(--text-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: var(--card-white);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(216, 27, 96, 0.15); /* Pink tinted shadow */
+    width: 100%;
+    max-width: 500px;
+}
+
+h2 {
+    color: var(--accent-dark-pink);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+    padding: 0.75rem;
+    border: 1px solid #f8bbd0;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: var(--accent-dark-pink);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.checkbox-group input {
+    margin-right: 0.75rem;
+    accent-color: var(--accent-dark-pink);
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--accent-dark-pink);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #AD1457; /* Slightly darker pink on hover */
+}
+
+.dashboard-stat {
+    background-color: var(--bg-light-pink);
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--accent-dark-pink);
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}

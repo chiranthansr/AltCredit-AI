@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>7. Dashboard</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body onload="fetchDashboardData()">
+    <div class="container">
+        <h2>Profile Overview</h2>
+        <p style="text-align: center; margin-bottom: 1.5rem; font-size: 1.1rem;">
+            Welcome back, <span id="display_name" style="font-weight: bold; color: var(--accent-dark-pink);">Loading...</span>
+        </p>
+        
+        <div class="dashboard-stat">
+            <h3 style="margin: 0; color: #D81B60; text-align: center; font-size: 1.8rem;">
+                Credit Score: <span id="display_score">...</span>
+            </h3>
+        </div>
+        
+        <div class="grid-2">
+            <div class="dashboard-stat">
+                <strong>Risk Level:</strong><br>
+                <span id="display_risk" style="font-size: 1.2rem;">...</span>
+            </div>
+            
+            <div class="dashboard-stat">
+                <strong>Loan Decision:</strong><br>
+                <span id="display_decision" style="font-size: 1.2rem; font-weight: bold;">...</span>
+            </div>
+        </div>
+
+        <div class="grid-2">
+            <div class="dashboard-stat">
+                <strong>Approval Prob:</strong><br>
+                <span id="display_approval">...</span>%
+            </div>
+            
+            <div class="dashboard-stat">
+                <strong>Default Prob:</strong><br>
+                <span id="display_default">...</span>%
+            </div>
+        </div>
+        
+        <div class="dashboard-stat">
+            <strong>Model Explanations:</strong>
+            <ul id="display_explanations" style="margin-top: 0.5rem; margin-bottom: 0; padding-left: 1.2rem;">
+                <li>Loading data...</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>

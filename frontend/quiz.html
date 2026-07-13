@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5. Psychometric Quiz</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Financial Behavior Quiz</h2>
+        <form onsubmit="handleQuiz(event)">
+            
+            <div class="form-group">
+                <label>1. If your income suddenly decreases, what would you do?</label>
+                <select name="q1" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="A">Take another loan</option>
+                    <option value="B">Reduce expenses</option>
+                    <option value="C">Borrow from friends</option>
+                    <option value="D">Ignore the situation</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>2. How often do you track your monthly budget?</label>
+                <select name="q2" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="A">Always</option>
+                    <option value="B">Sometimes</option>
+                    <option value="C">Rarely</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>3. What is your primary goal for taking a loan?</label>
+                <select name="q3" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="A">Business expansion</option>
+                    <option value="B">Personal luxury</option>
+                    <option value="C">Emergency funds</option>
+                </select>
+            </div>
+
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

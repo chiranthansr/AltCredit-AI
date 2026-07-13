@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1. Register</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Create Account</h2>
+        <form onsubmit="handleRegister(event)">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" name="full_name" required>
+            </div>
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="text" name="phone_number" required>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label>User Type</label>
+                <select name="user_type" required>
+                    <option value="Individual">Individual</option>
+                    <option value="MSME">MSME</option>
+                </select>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

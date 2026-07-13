@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3. Consent & Permissions</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Data Consent</h2>
+        <p>Please allow access to generate your risk profile:</p>
+        <form onsubmit="handleConsent(event)">
+            <div class="checkbox-group">
+                <input type="checkbox" id="bank" name="bank_access" required>
+                <label for="bank">Bank Data Access</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="location" name="location_access" required>
+                <label for="location">Location Access</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="questionnaire" name="questionnaire_access" required>
+                <label for="questionnaire">Questionnaire Access</label>
+            </div>
+            <button type="submit">I Agree and Continue</button>
+        </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
