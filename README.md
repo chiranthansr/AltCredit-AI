@@ -92,17 +92,17 @@ uvicorn main:app --reload
 ## Workflow
 
 Register
-↓
+->
 Login
-↓
+->
 Consent
-↓
+->
 Credit Information
-↓
+->
 Risk Questionnaire
-↓
+->
 ML Prediction
-↓
+->
 Dashboard
 ---
 ## Author
