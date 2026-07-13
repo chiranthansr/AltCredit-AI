@@ -106,7 +106,7 @@ ML Prediction
 Dashboard
 ---
 ## Author
-Chiranthan S R
-Ruthwik N P
-Rohan R
-Sanath M Koushik
+Chiranthan S R ,
+Ruthwik N P ,
+Rohan R ,
+Sanath M Koushik .
