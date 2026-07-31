@@ -30,7 +30,7 @@ The application is built using FastAPI, MongoDB, Machine Learning, HTML, CSS, an
 - Pydantic
 
 ### Machine Learning
-- Scikit-learn
+- Scikit-Learn
 - Pandas
 - NumPy
 - Joblib
